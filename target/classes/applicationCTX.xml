@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="memberDAO" class="com.tjoeun.dao.MemberDAO"/>
+	<bean id="boardDAO" class="com.tjoeun.dao.BoardDAO"/>
+	<bean id="contactDAO" class="com.tjoeun.dao.ContactDAO"/>
+	<bean id="registerDAO" class="com.tjoeun.dao.RegisterDAO"/>
+	<bean id="alarmDAO" class="com.tjoeun.dao.AlarmDAO"/>
+	<bean id="chatDAO" class="com.tjoeun.dao.ChatDAO"/>
+	
+	<bean id="messageVO" class="com.tjoeun.vo.MessageVO"/>
+	<bean id="chatVO" class="com.tjoeun.vo.ChatVO"/>
+	<bean id="alarmVO" class="com.tjoeun.vo.AlarmVO"/>
+	<bean id="boardCommentVO" class="com.tjoeun.vo.BoardCommentVO"/>
+	<bean id="boardVO" class="com.tjoeun.vo.BoardVO"/>
+	<bean id="contactVO" class="com.tjoeun.vo.ContactVO"/>
+	<bean id="memberVO" class="com.tjoeun.vo.MemberVO"/>
+	<bean id="memberList" class="com.tjoeun.vo.MemberList"/>
+	<bean id="boardList" class="com.tjoeun.vo.BoardList"/>
+    <bean id="replyVO" class="com.tjoeun.vo.ReplyVO"/>
+
+	<bean id="alarmCount" class="com.tjoeun.service.AlarmCountService"/>
+	<bean id="alarmDelete" class="com.tjoeun.service.AlarmDeleteService"/>
+	<bean id="alarmDeleteAll" class="com.tjoeun.service.AlarmDeleteAllService"/>
+	<bean id="upload" class="com.tjoeun.service.UploadService"/>
+	<bean id="like" class="com.tjoeun.service.LikeService"/>
+	<bean id="likeNext" class="com.tjoeun.service.LikeNextService"/>
+	<bean id="list" class="com.tjoeun.service.ListService"/>
+	<bean id="list2" class="com.tjoeun.service.List2Service"/>
+	<bean id="contactOK" class="com.tjoeun.service.ContactOKService"/>
+	<bean id="sendEmail" class="com.tjoeun.service.SendEmailService"/>
+	<bean id="adminBoard" class="com.tjoeun.service.Admin_boardService"/>
+	<bean id="adminMember" class="com.tjoeun.service.Admin_memberService"/>
+	<bean id="adminMemberSearch" class="com.tjoeun.service.Admin_memberSearchService"/>
+	<bean id="adminDelete" class="com.tjoeun.service.Admin_deleteService"/>
+	<bean id="adminContact" class="com.tjoeun.service.Admin_contactService"/>
+	<bean id="adminContactSingle" class="com.tjoeun.service.Admin_contactSingleService"/>
+	<bean id="adminBoardFilter" class="com.tjoeun.service.Admin_boardFilter"/>
+	<bean id="loginOK" class="com.tjoeun.service.LoginOKService"/>
+	<bean id="myphoto" class="com.tjoeun.service.MyphotoService"/>
+	<bean id="myphotoNext" class="com.tjoeun.service.MyphotoNextService"/>
+	<bean id="alarm" class="com.tjoeun.service.AlarmService"/>
+	<bean id="chatList" class="com.tjoeun.socket.ChatListService"/>
+	<bean id="chatContent" class="com.tjoeun.socket.ChatContentService"/>
+	<bean id="chatInsert" class="com.tjoeun.socket.ChatInsertService"/>
+	<bean id="chatExit" class="com.tjoeun.socket.ChatExitService"/>
+	<bean id="chatCheck" class="com.tjoeun.socket.ChatCheckService"/>
+	<bean id="chatFindId" class="com.tjoeun.socket.ChatFindIdService"/>
+	
+	
+    <bean id="nicknamecheck" class="com.tjoeun.service.NicknamecheckService"/>
+    <bean id="idcheck" class="com.tjoeun.service.IdcheckService"/>
+	<bean id="insert" class="com.tjoeun.service.InsertService"/>
+    
+    <bean id="autoLogin" class="com.tjoeun.service.AutoLoginService"/>
+    <bean id="updateMember" class="com.tjoeun.service.UpdateMemberService"/>
+	<bean id="deleteAccount" class="com.tjoeun.service.DeleteAccountService"/>
+	
+    <bean id="replyService" class="com.tjoeun.service.ReplyService"/>
+    <bean id="replyDeleteService" class="com.tjoeun.service.ReplyDeleteService"/>
+	<bean id="boardSingle2Service" class="com.tjoeun.service.BoardSingle2Service"/>
+	<bean id="boardSingleService" class="com.tjoeun.service.BoardSingleService"/>
+	<bean id="boardUpdateService" class="com.tjoeun.service.BoardUpdateService"/>
+	<bean id="boardDeleteService" class="com.tjoeun.service.BoardDeleteService"/>
+	<bean id="boardDeleteCommentService" class="com.tjoeun.service.BoardDeleteCommentService"/>
+	<bean id="boardCommentService" class="com.tjoeun.service.BoardCommentService"/>
+	<bean id="boardLikeService" class="com.tjoeun.service.BoardLikeService"/>
+	<bean id="boardCancelLikeService" class="com.tjoeun.service.BoardCancelLikeService"/>
+	<bean id="reportService" class="com.tjoeun.service.ReportService"/>
+    
+    
+
+</beans>

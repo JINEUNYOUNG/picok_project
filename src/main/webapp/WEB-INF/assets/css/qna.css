@@ -1,0 +1,40 @@
+
+
+fieldset {
+	border: none;
+	width: 600px;
+	padding: 0;
+	overflow: hidden;
+}
+
+fieldset > label input[type=radio] {
+	display: none;
+}
+
+fieldset > label > span {
+	padding: 15px 20px;
+	display: block;
+	cursor: pointer;
+	font-weight: 900;
+	text-transform: uppercase;
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+
+fieldset > label > div {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: all ease-in-out 300ms;
+	overflow: hidden;
+	padding: 10px;
+}
+
+fieldset > label input[type=radio]:checked + div {
+	grid-template-rows: 1fr;
+}
+
+fieldset > label > div > p {
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+}
