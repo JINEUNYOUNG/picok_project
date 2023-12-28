@@ -81,7 +81,7 @@
 	</context:component-scan>
 	<!-- websocket handler -->
 	
-	<beans:bean id="myHandler" class="com.tjoeun.socket.EchoHandler" />
+	<beans:bean id="myHandler" class="com.tjoeun.service.chat.EchoHandler" />
 	<websocket:handlers>
 		<websocket:mapping handler="myHandler" path="/alarm" />
 		<websocket:handshake-interceptors>
