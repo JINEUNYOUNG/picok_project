@@ -118,18 +118,17 @@ function loadMoreData() {
 	    	},
 		    success: function (data) {
 			      updateUI(data); // UI 업데이트 함수 
-					  var jsonData = JSON.parse(data);
-	
-				  	//현재 페이지가 마지막이면, 이벤트 리스너 삭제(바닥에 닿아도 더 호출하지 않는다.)
+			      var jsonData = JSON.parse(data);
+			      //현재 페이지가 마지막이면, 이벤트 리스너 삭제(바닥에 닿아도 더 호출하지 않는다.)
 			      if (currentPage >= jsonData.boardList.totalPages + 1) { 
 				        window.removeEventListener('scroll', handleScroll);
-				    }
+			      }
 
 			      currentPage++; // 페이지+1
 			      isLoading = false; // 로딩 끝 
-				    },
+			      },
 		    error: function (error) {
-			      console.error(error);
+		    	console.error(error);
 		    },
 		  });
 		}
@@ -186,7 +185,7 @@ function deleteData() {
     // 선택된 글이 있다면 컨트롤러로 보내 삭제하는 함수를 호출한다
     if (selectedIds.length === 0) {
         alert('선택된 글이 없습니다.');
-****    } else {
+    } else {
         var xhr = new XMLHttpRequest();
         var url = '/picok_project/admin_delete'; 
         xhr.open('POST', url, true);
@@ -226,7 +225,7 @@ private final JavaMailSenderImpl mailSender;
 		String idx = request.getParameter("reply-idx");
 
 		// 발신인은 mailSender에 지정된 이름을 가져온다(servlet-context에 JavaMailSender bean을 설정해두었다)
-    String from = mailSender.getUsername(); 
+		String from = mailSender.getUsername(); 
 
 		model.addAttribute("idx",idx);
 		model.addAttribute("content",content); // 회신완료으로 변경 용 
@@ -408,8 +407,8 @@ $('#msg').keydown(function() {
 	protected void handleTextMessage(WebSocketSession session, TextMessage message) throws IOException{
 		String payload = message.getPayload();
 		ObjectMapper objectMapper = new ObjectMapper(); 
-    sonNode jsonNode;
-   
+		JsonNode jsonNode;
+       
 		jsonNode = objectMapper.readTree(payload);
 		
 		AbstractApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationCTX.xml");
