@@ -62,7 +62,8 @@
 
 # 💾 DB설계
 <div align="center">
-  <img width="960" alt="image" src="https://github.com/JINEUNYOUNG/picok_project/assets/131138113/40bf2217-28bf-4c4b-9c3d-4bea32462464">
+  <img width="960" alt="image" src="https://github.com/JINEUNYOUNG/picok_project/assets/131138113/7a208d03-870a-4646-97ef-021ff0d8d363">
+
 </div>   
 
 
