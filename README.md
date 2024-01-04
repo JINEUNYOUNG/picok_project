@@ -489,6 +489,7 @@ function chatList() {
 	  // 채팅 컨테이너 초기화 작업을 비동기로 수행 (플래시현상 때문에 추가함)
 	  initializeChatContainerAsync()
 	      .then(() => {
+	          console.log('채팅 컨테이너 초기화 완료');  
 	      })
 	      .catch((error) => {
 	          console.error('채팅 컨테이너 초기화 중 오류 발생:', error);
